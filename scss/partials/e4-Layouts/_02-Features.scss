@@ -1,0 +1,29 @@
+.e4__02-Features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  column-gap: 3.2rem;
+  row-gap: 4rem;
+  padding: 4rem;
+
+  @media only screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  @media only screen and (max-width: 750px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3.2rem;
+    row-gap: 3.2rem;
+  }
+
+  &__feature {
+    text-align: center;
+
+    & p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  }
+}
