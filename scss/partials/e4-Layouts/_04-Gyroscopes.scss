@@ -2,7 +2,7 @@
   position: relative;
   color: #fff;
   background-color: #000;
-  padding: 12rem 2rem;
+  @include E4-section-padding;
 
   &__text {
     @include E4-text-box(80%);

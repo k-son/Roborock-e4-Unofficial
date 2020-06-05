@@ -1,6 +1,6 @@
 .e4__03-Perfection {
-  padding: 12rem 2rem;
   background-color: #f4f4f4;
+  @include E4-section-padding;
 
   &__text {
     @include E4-text-box(80%);
