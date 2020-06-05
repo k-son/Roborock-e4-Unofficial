@@ -1,0 +1,40 @@
+.e4__06-More {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    @include E4-text-box;
+    color: #fff;
+
+    @media only screen and (max-width: 450px) {
+      top: 35%;
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 350px) {
+      top: 45%;
+      width: 80%;
+    }
+
+    & p {
+      @include E4-paragraph(center, #fff);
+    }
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 130%;
+    }
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}
