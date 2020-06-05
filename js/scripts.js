@@ -8,6 +8,8 @@ const textGyroscopesFeature_3 = document.querySelector('.gyro-text--3').innerHTM
 const imageGyroscope_2 = document.querySelector('.gyro-image--2');
 const imageGyroscope_3 = document.querySelector('.gyro-image--3');
 
+
+
 //// REUSABLE FUNCTIONS
 
 function throttled(delay, fn) {
@@ -34,6 +36,7 @@ function ifElementScrolledUpIntoView(el, pixels) {
     );
   }
 }
+
 
 
 //// Scripts
