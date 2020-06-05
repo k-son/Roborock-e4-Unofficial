@@ -72,10 +72,30 @@
   }
 
   @media only screen and (max-width: 600px) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: 420px) {
     font-size: 3.2rem;
   }
 }
 
+.e4-h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2.4rem;
+
+  @media only screen and (max-width: 750px) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+}
 
 .e4-h4 {
   font-size: 2rem;

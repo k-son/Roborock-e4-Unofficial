@@ -52,8 +52,18 @@
 
 
 /// E4 mixins
+@mixin E4-text-box($max-width) {
+  width: 80%;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 420px) {
+    width: 90%;
+  }
+}
+
 @mixin E4-paragraph($align: center, $color: var(--color-txt-grey-darker)) {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   text-align: $align;
   color: $color;
