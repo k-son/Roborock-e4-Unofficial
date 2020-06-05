@@ -5,7 +5,7 @@
   @include E4-section-padding;
 
   &__text {
-    @include E4-text-box(80%);
+    @include E4-text-box;
     margin-bottom: 10rem;
 
     & p {

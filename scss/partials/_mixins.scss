@@ -52,7 +52,7 @@
 
 
 /// E4 mixins
-@mixin E4-text-box($max-width) {
+@mixin E4-text-box($max-width: 90rem) {
   width: 80%;
   max-width: $max-width;
   margin: 0 auto;

@@ -1,0 +1,27 @@
+.e4__05-Suction {
+  @include E4-section-padding;
+
+  &__text {
+    @include E4-text-box;
+
+    & p {
+      @include E4-paragraph(center, var(--color-txt-grey-darker));
+    }
+  }
+
+  & img {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: -4rem auto 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+}

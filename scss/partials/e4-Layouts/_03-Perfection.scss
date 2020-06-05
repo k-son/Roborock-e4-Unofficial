@@ -3,7 +3,7 @@
   @include E4-section-padding;
 
   &__text {
-    @include E4-text-box(80%);
+    @include E4-text-box(90rem);
 
     & p {
       @include E4-paragraph(center, #232f3e);
