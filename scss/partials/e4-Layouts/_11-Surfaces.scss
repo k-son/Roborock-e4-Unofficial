@@ -1,0 +1,101 @@
+.e4__11-Surfaces {
+  display: flex;
+
+  &__surface {
+    position: relative;
+    width: 100%;
+    height: 75rem;
+    background-size: cover;
+
+    &--delicate {
+      background-image: url(../../../images/heros-e4-scene-delicate-furniture.jpg);
+      background-position-x: 50%;
+    }
+
+    &--hair {
+      background-image: url(../../../images/heros-e4-scene-pet-hair.jpg);
+      background-position-x: 65%;
+    }
+
+    &--hardwood {
+      background-image: url(../../../images/heros-e4-scene-hardwood-floors.jpg);
+      background-position-x: 50%;
+    }
+
+    &--carpet {
+      background-image: url(../../../images/heros-e4-scene-carpets.jpg);
+      background-position-x: 52%;
+    }
+
+    & > h3 {
+      position: relative;
+      font-weight: 700;
+      margin: 8rem 2rem;
+    }
+  }
+
+
+  &__overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 8rem 2rem 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  &__text {
+    color: #fff;
+
+    & h3 {
+      font-weight: 700;
+      margin-bottom: 1.6rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__close-btn{
+    position: absolute;
+    bottom: 8rem;
+    left: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 3;
+    transition: all .2s;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 2px;
+      width: 50%;
+      background-color: #fff;
+      transition: all .2s;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+
+// js classes
+
+.btnSurface-active {
+  transform: rotate(45deg) !important;
+}

@@ -71,10 +71,6 @@
   @media only screen and (max-width: 600px) {
     text-align: left;
   }
-
-  @media only screen and (max-width: 420px) {
-    font-size: 1.6rem;
-  }
 }
 
 @mixin E4-section-padding($vertical: 12rem, $horizontal: 2rem) {

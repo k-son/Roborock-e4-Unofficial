@@ -8,6 +8,12 @@ const textGyroscopesFeature_3 = document.querySelector('.gyro-text--3').innerHTM
 const imageGyroscope_2 = document.querySelector('.gyro-image--2');
 const imageGyroscope_3 = document.querySelector('.gyro-image--3');
 
+// 11 Surfaces
+let surfaceBoxes = document.querySelectorAll('.e4__11-Surfaces__surface');
+const surfaceHeadings = document.querySelectorAll('.e4__11-Surfaces__surface > h3');
+const surfaceOverlays = document.querySelectorAll('.e4__11-Surfaces__overlay');
+const surfaceButtons = document.querySelectorAll('.e4__11-Surfaces__close-btn');
+
 
 
 //// REUSABLE FUNCTIONS
@@ -41,7 +47,7 @@ function ifElementScrolledUpIntoView(el, pixels) {
 
 //// Scripts
 
-// *** 04 Features ***
+/// *** 04 Features ***
 // insert first text on page load then insert next texts when appropriate image comes fully into view
 dynamicTextGyroscopes.innerHTML = textGyroscopesFeature_1;
 
@@ -65,3 +71,15 @@ const insertTextGyroscope_3 = throttled(200, function() {
 })
 
 window.addEventListener('scroll', insertTextGyroscope_3);
+// ** END OF: 04 Features **
+
+
+/// *** 11 Surfaces ***
+// after click open/close overlay and rotate button
+for (let i=0; i<surfaceBoxes.length; i++) {
+  surfaceBoxes[i].addEventListener('click', function() {
+    surfaceHeadings[i].classList.toggle('displayNone');
+    surfaceOverlays[i].classList.toggle('displayNone');
+    surfaceButtons[i].classList.toggle('btnSurface-active');
+})};
+// ** END OF: 11 Surfaces **
