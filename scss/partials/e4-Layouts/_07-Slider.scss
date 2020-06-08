@@ -1,0 +1,123 @@
+.e4__07-Slider {
+  position: relative;
+  padding: 12rem 0;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 8rem 0;
+  }
+
+  &__text {
+    @include E4-text-box;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+      margin-bottom: 6rem;
+    }
+
+    & p {
+      @include E4-paragraph(center, var(--color-txt-grey-darker));
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      left: 0;
+      transform: translateX(0);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__item {
+      margin: 0 4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0 1.6rem;
+      }
+
+      & img {
+        display: block;
+        border-radius: 10px;
+
+      }
+    }
+  }
+}
+
+
+// owl carousel
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 2;
+
+  @media only screen and (max-width: $bp-medium) {
+    top: calc(100% + 4rem);
+  }
+
+  & span {
+    position: relative;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+
+.owl-next {
+  left: 66.75%;
+
+  @media only screen and (max-width: $bp-medium) {
+    left: calc(50% + 4rem);
+  }
+
+  & span {
+    transform: translate(2px, -6px);
+  }
+}
+
+.owl-prev {
+  left: 33.3%;
+
+  @media only screen and (max-width: $bp-medium) {
+    left: calc(50% - 4rem);
+  }
+
+  & span {
+    transform: translate(-1px, -6px);
+  }
+}
+
+.owl-item img {
+  position: relative;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 90% !important;
+  }
+}
+
+.owl-item {
+
+  @media only screen and (max-width: $bp-medium) {
+
+  }
+}

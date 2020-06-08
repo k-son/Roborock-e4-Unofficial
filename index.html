@@ -12,6 +12,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
 
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
   <link rel="stylesheet" href="css/main.min.css">
   <script src="./js/scripts.js" defer></script>
 </head>
@@ -108,7 +111,36 @@
         <img src="./images/heros-e4-more-than-a-vacuum.jpg" alt="Odkurzacz Roborock myje drewnianą podłogę.">
       </picture>
     </section>
+    <section class="e4__07-Slider">
+      <div class="e4__07-Slider__text">
+        <h2 class="e4-h2">Clean Deeper and Further</h2>
+        <p>Able to climb up to 2cm (0.8in)5, E4 roams smoothly around the home, over thresholds and carpets. At the same time, a 100% larger3 5200mAh battery gives it the energy to vacuum up to 200sqm (2152sqft) on a single charge6.</p>
+      </div>
+      <div class="e4__07-Slider__slider owl-carousel" id="owlNav">
+        <div class="e4__07-Slider__slider__item"><img src="./images/heros-e4-clean-deeper-and-further-1.jpg" alt=""></div>
+        <div class="e4__07-Slider__slider__item"><img src="./images/heros-e4-clean-deeper-and-further-2.jpg" alt=""></div>
+        <div class="e4__07-Slider__slider__item"><img src="./images/heros-e4-clean-deeper-and-further-3.jpg" alt=""></div>
+      </div>
+    </setion>
   </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    nav: true,
+    navContainer: '#owlNav',
+    responsive: {
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        }
+    }
+  });
+</script>
 </body>
 
 </html>
