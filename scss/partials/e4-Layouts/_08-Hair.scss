@@ -1,5 +1,6 @@
 .e4__08-Hair {
   @include E4-section-padding;
+  padding-top: 6rem;
 
   &__text {
     @include E4-text-box(70rem);
