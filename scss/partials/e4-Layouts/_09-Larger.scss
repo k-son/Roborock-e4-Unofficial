@@ -1,0 +1,28 @@
+.e4__09-Larger {
+  padding: 12rem 0;
+  background-color: #f4f4f4;
+
+  @media only screen and (max-width: 600px) {
+    padding: 8rem 0rem;
+  }
+
+  &__text {
+    @include E4-text-box(80rem);
+    padding: 0 2rem;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: 500px ) {
+      margin-bottom: 6rem;
+    }
+
+    & p {
+      @include E4-paragraph(center, var(--color-txt-grey-darker));
+    }
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
