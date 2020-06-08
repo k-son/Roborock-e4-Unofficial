@@ -1,0 +1,57 @@
+.e4__10-App {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 12rem;
+    left: 6rem;
+    width: 50rem;
+
+    @media only screen and (max-width: 1000px) {
+      width: 35rem;
+    }
+
+    @media only screen and (max-width: 750px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 12rem auto 0;
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin: 8rem auto 0;
+      width: 80%;
+    }
+    
+    & h2 {
+      text-align: left;
+
+      @media only screen and (max-width: 750px) {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        text-align: left;
+      }
+    }
+
+    & p {
+      @include E4-paragraph(left);
+
+      @media only screen and (max-width: 750px) {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        text-align: left;
+      }
+    }
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
