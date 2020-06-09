@@ -49,6 +49,7 @@ function ifElementScrolledUpIntoView(el, pixels) {
 
 /// *** 04 Features ***
 // insert first text on page load then insert next texts when appropriate image comes fully into view
+
 dynamicTextGyroscopes.innerHTML = textGyroscopesFeature_1;
 
 const insertTextGyroscope_2 = throttled(200, function() {
@@ -76,6 +77,7 @@ window.addEventListener('scroll', insertTextGyroscope_3);
 
 /// *** 11 Surfaces ***
 // after click open/close overlay and rotate button
+
 for (let i=0; i<surfaceBoxes.length; i++) {
   surfaceBoxes[i].addEventListener('click', function() {
     surfaceHeadings[i].classList.toggle('displayNone');
