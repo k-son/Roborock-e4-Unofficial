@@ -1,3 +1,5 @@
+"use strict";
+
 //// VARIABLES
 
 // 04 Features
