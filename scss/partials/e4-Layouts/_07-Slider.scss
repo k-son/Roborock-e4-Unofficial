@@ -60,9 +60,6 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -74,10 +71,17 @@
   }
 
   & span {
-    position: relative;
+    display: none;
+  }
+
+  &::after {
     display: inline-block;
-    font-size: 6rem;
-    font-weight: 300;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    line-height: 5rem;
     color: #fff;
   }
 }
@@ -89,8 +93,8 @@
     left: calc(50% + 4rem);
   }
 
-  & span {
-    transform: translate(2px, -6px);
+  &::after {
+    content: ">";
   }
 }
 
@@ -101,8 +105,8 @@
     left: calc(50% - 4rem);
   }
 
-  & span {
-    transform: translate(-1px, -6px);
+  &::after {
+    content: "<";
   }
 }
 
