@@ -45,7 +45,7 @@ function ifElementScrolledUpIntoView(el, pixels) {
 
 
 
-//// Scripts
+//// MAIN SCRIPTS
 
 /// *** 04 Features ***
 // insert first text on page load then insert next texts when appropriate image comes fully into view
