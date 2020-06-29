@@ -4,20 +4,23 @@
   &__text {
     position: absolute;
     left: 50%;
-    top: 23%;
+    top: 25%;
     transform: translate(-50%, -50%);
     @include E4-text-box;
     padding: 0 2rem;
     color: #fff;
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: $bp-small) {
       top: 35%;
+    }
+
+    @media only screen and (max-width: 450px) {
+      top: 45%;
       width: 80%;
     }
 
-    @media only screen and (max-width: 350px) {
-      top: 45%;
-      width: 80%;
+    @media only screen and (max-width: 400px) {
+      top: 48%;
     }
 
     & p {
@@ -36,6 +39,10 @@
 
     @media only screen and (max-width: 750px) {
       width: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 130%;
     }
   }
 }

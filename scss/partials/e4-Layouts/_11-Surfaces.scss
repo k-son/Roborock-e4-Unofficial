@@ -15,6 +15,18 @@
       height: 40rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+      height: 50rem;
+    }
+
+    @media only screen and (max-width: 420px) {
+      height: 60rem;
+    }
+
+    @media only screen and (max-width: 340px) {
+      height: 68rem;
+    }
+
     &--delicate {
       background-image: url(../../../images/heros-e4-scene-delicate-furniture.jpg);
       background-position-x: 50%;
@@ -72,6 +84,12 @@
         text-align: center;
         letter-spacing: 1px;
         color: #fff;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        background-color: rgba(0, 0, 0, .35);
+        border-radius: 3px;
+        padding: .8rem 1.6rem;
       }
     }
   }
