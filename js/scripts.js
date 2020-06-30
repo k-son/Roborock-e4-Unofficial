@@ -83,14 +83,25 @@ window.addEventListener('scroll', insertTextGyroscope_3);
 
 
 /// *** 11 Surfaces ***
-// after click open/close overlay and rotate button
+surfaceBoxes = Array.from(surfaceBoxes);
 
 for (let i=0; i<surfaceBoxes.length; i++) {
-  surfaceBoxes[i].addEventListener('click', function() {
+  surfaceBoxes[i].addEventListener('click', () => {
+    // close any other overlay
+    const index = surfaceBoxes.indexOf(surfaceBoxes[i]);
+    let clonedSurfaceBoxes = surfaceBoxes.slice(0);
+    clonedSurfaceBoxes.splice(index, 1);
+    clonedSurfaceBoxes.forEach(el => {
+      el.firstElementChild.classList.remove('displayNone');
+      el.firstElementChild.nextElementSibling.classList.add('displayNone');
+      el.lastElementChild.classList.remove('btnSurface-active');
+    })
+    // open/close selected overlay
     surfaceHeadings[i].classList.toggle('displayNone');
     surfaceOverlays[i].classList.toggle('displayNone');
     surfaceButtons[i].classList.toggle('btnSurface-active');
-})};
+  })
+}
 // ** END OF: 11 Surfaces **
 
 
