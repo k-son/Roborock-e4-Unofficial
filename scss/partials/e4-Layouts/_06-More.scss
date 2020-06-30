@@ -1,48 +1,23 @@
 .e4__06-More {
   position: relative;
+  height: 80rem;
+  background-image: url(./../images/heros-e4-more-than-a-vacuum.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 45% 100%;
+
+  @media only screen and (max-width: 750px) {
+    background-image: url(./../images/heros-e4-more-than-a-vacuum-750px.jpg);
+    background-position: center bottom;
+  }
 
   &__text {
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
+    @include E4-section-padding;
     @include E4-text-box;
-    padding: 0 2rem;
     color: #fff;
-
-    @media only screen and (max-width: $bp-small) {
-      top: 35%;
-    }
-
-    @media only screen and (max-width: 450px) {
-      top: 45%;
-      width: 80%;
-    }
-
-    @media only screen and (max-width: 400px) {
-      top: 48%;
-    }
 
     & p {
       @include E4-paragraph(center, #fff);
-    }
-  }
-
-  & img {
-    display: block;
-    width: 100%;
-    height: auto;
-
-    @media only screen and (max-width: $bp-medium) {
-      width: 130%;
-    }
-
-    @media only screen and (max-width: 750px) {
-      width: 100%;
-    }
-
-    @media only screen and (max-width: 400px) {
-      width: 130%;
     }
   }
 }
